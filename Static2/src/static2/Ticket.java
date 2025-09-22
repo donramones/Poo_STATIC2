@@ -9,13 +9,14 @@ package static2;
  * @author rivar
  */
 public class Ticket {
-    private int contador;
+    private static int contador = 0;
     private int numero;
     private String fechaCompra;
     private String DNIpersona;
     
     public Ticket(String fechaCompra, String DNIPersona){
         contador++; //contador = contador +1
+        this.numero = contador;
         this.fechaCompra = fechaCompra;
         this.DNIpersona = DNIPersona;
     }
